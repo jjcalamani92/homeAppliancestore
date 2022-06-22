@@ -3,7 +3,7 @@ export const HomeHardware = () => {
 		<section className="relative bg-white">
 			<img
 				className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1655137811/Ferreteria/Ferreteria_rxmqk6.webp"
+				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1655855004/React-jj/blogs/i/como-vender-mas-en-una-tienda-de-pequenos-electrodomesticos_idva5e.jpg"
 				alt="Couple on a bed with a dog"
 			/>
 
@@ -19,7 +19,7 @@ export const HomeHardware = () => {
 					</h1>
 
 					<p className="max-w-lg mt-4 sm:leading-relaxed sm:text-xl">
-						Fierros es una ferretería que ofrece toda una gama de herramientas para arreglar los desperfectos del hogar.
+						Electro es una tienda que ofrece toda una gama de electrodomesticos para el hogar.
 					</p>
 
 					<div className="flex flex-wrap gap-4 mt-8 text-center">

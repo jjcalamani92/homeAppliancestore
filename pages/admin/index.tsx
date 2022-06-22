@@ -27,9 +27,9 @@ const AdminPage = () => {
 						<a  className="transition duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 py-2 text-sm">Nuevo Producto</a>
 					</Link>
 				</div>
-				<Table02 products={data.clothingsAll} />
-				<LayoutItemListAdmin products={data.clothingsAll}/>
-				<Pagination01 setPage={setPage} page={page} length={data.clothingsAll.length} all={PAGE_SIZE} />
+				<Table02 products={data.homeAppliancesAll} />
+				<LayoutItemListAdmin products={data.homeAppliancesAll}/>
+				<Pagination01 setPage={setPage} page={page} length={data.homeAppliancesAll.length} all={PAGE_SIZE} />
 			</LayoutAdmin>
 		</>
 

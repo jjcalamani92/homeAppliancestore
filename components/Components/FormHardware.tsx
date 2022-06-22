@@ -21,7 +21,6 @@ interface FormData {
   oldPrice: number;
   tags: string[];
 
-  sizes: string[];
   color: string;
 }
 interface Props {
@@ -140,12 +139,12 @@ export const FormHardware: FC<Props> = ({ product }) => {
   const onSubmit = async (form: FormData) => {
     const data = { ...form, price: Number(form.price), oldPrice: Number(form.oldPrice), inStock: Number(form.inStock), site: process.env.API_SITE }
     if (form._id) {
-      await axios.put(`${process.env.APIP_URL}/api/clothing/${product._id}`, data)
+      await axios.put(`${process.env.APIP_URL}/api/homeAppliance/${product._id}`, data)
       router.replace('/admin')
 
     } else {
       await axios.post(
-        `${process.env.APIP_URL}/api/clothing`, data);
+        `${process.env.APIP_URL}/api/homeAppliance`, data);
       router.replace(`/admin`)
     }
   }
@@ -425,7 +424,7 @@ export const FormHardware: FC<Props> = ({ product }) => {
 
                   <div className="grid grid-cols-6 gap-6">
 
-                    <div className="col-span-6 sm:col-span-3">
+                    {/* <div className="col-span-6 sm:col-span-3">
                       <fieldset
                       >
                         <legend className="contents text-base font-medium text-gray-900">Tallas</legend>
@@ -455,7 +454,7 @@ export const FormHardware: FC<Props> = ({ product }) => {
                       <div>
                         {errors.sizes?.length === 0 && <span className="text-sm text-red-500">seleccione al menos una talla</span>}
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-span-6 sm:col-span-6">
                       <label htmlFor="color" className="block text-sm font-medium text-gray-700">

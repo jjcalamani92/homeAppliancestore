@@ -1,5 +1,5 @@
 import { FC,  } from "react";
-import { IClothing } from "../../src/interfaces";
+import { IHomeAppliance } from "../../src/interfaces";
 import { SwiperDetail } from "./Swiper";
 
 function classNames(...classes: string[]) {
@@ -7,7 +7,7 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-	product: IClothing;
+	product: IHomeAppliance;
 }
 
 export const ProductOverviews: FC<Props> = ({ product }) => {
